@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion Worksheet – Class 7 Physics</title>
+<style>
+:root{--ink:#1d2433;--muted:#5b6478;--bg:#f5f7fb;--card:#fff;--line:#d9dfec;--brand:#2456d6;--brand-soft:#e8efff;--good:#177a4b;--good-soft:#e5f6ed;--warn:#a85a00;--warn-soft:#fff3df;--rule:#c9d2e6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 60px}
+header{background:linear-gradient(135deg,#1c3f9e,#2456d6);color:#fff;padding:32px 16px 28px}
+header .wrap{padding-bottom:0}
+header h1{margin:0 0 4px;font-size:1.9rem;line-height:1.2}
+header p{margin:0;opacity:.9}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:18px}
+.meta label{font-size:.8rem;opacity:.9;display:block}
+.meta input{width:100%;padding:8px 10px;border:0;border-radius:8px;font:inherit}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:8px 16px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--brand);font-size:.9rem;padding:5px 11px;border-radius:99px;background:var(--brand-soft)}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:22px}
+h2{margin:0 0 12px;font-size:1.35rem;color:var(--brand)}
+h3{margin:18px 0 6px;font-size:1.05rem}
+.marks{float:right;font-size:.8rem;background:var(--brand-soft);color:var(--brand);padding:2px 9px;border-radius:99px;font-weight:600}
+.tip{background:var(--warn-soft);border-left:4px solid var(--warn);padding:10px 14px;border-radius:8px;margin:12px 0}
+.ok{background:var(--good-soft);border-left:4px solid var(--good);padding:10px 14px;border-radius:8px;margin:12px 0}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--brand-soft)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:12px 0}
+.step{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fafbff}
+.step b{display:block;color:var(--brand)}
+.formula{font-size:1.1rem;text-align:center;background:var(--brand-soft);border-radius:10px;padding:10px;margin:10px 0;font-weight:600}
+.q{margin:18px 0 6px;font-weight:600}
+.q small{font-weight:400;color:var(--muted)}
+textarea{width:100%;display:block;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit;line-height:28px;resize:vertical;min-height:84px;
+ background:repeating-linear-gradient(transparent,transparent 27px,var(--rule) 28px);background-attachment:local}
+textarea.big{min-height:140px}
+.fill{display:inline-block;min-width:110px;border-bottom:2px solid var(--ink);margin:0 4px}
+details{border:1px solid var(--line);border-radius:10px;margin:10px 0;background:#fff}
+summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--good)}
+details .body{padding:2px 16px 12px}
+.ans{background:var(--good-soft);border-radius:8px;padding:8px 12px;margin:6px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:620px){.cols{grid-template-columns:1fr}section{padding:16px}}
+button{font:inherit;background:var(--brand);color:#fff;border:0;border-radius:8px;padding:8px 16px;cursor:pointer}
+button.alt{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.tick li{margin:4px 0}
+ul.tick{list-style:none;padding-left:0}
+ul.tick li::before{content:"☐ ";color:var(--brand)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:30px}
+@media print{
+ body{background:#fff;font-size:12pt}nav,.tools,header .meta input{display:none}
+ header{background:#fff;color:#000;padding:0}header .meta{display:none}
+ section{border:1px solid #999;break-inside:avoid-page;margin-top:12px}
+ textarea{border:0;overflow:visible}details{display:none}
+ .noprint{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <h1>Motion in a Straight Line</h1>
+  <p>Class 7 Physics · Scoring Worksheet for Subjective (Written) Exams</p>
+  <div class="meta">
+   <div><label for="nm">Name</label><input id="nm" placeholder="Student name"></div>
+   <div><label for="sec">Class / Section</label><input id="sec" placeholder="7 - __"></div>
+   <div><label for="dt">Date</label><input id="dt" type="date"></div>
+  </div>
+ </div>
+</header>
+<nav><div class="wrap">
+ <a href="#how">1 · How to Score</a><a href="#learn">2 · Learn</a><a href="#compare">3 · Compare</a>
+ <a href="#model">4 · Model Answers</a><a href="#practice">5 · Practice</a><a href="#key">6 · Answer Key</a><a href="#check">7 · Checklist</a>
+</div></nav>
+
+<div class="wrap">
+
+<section id="how">
+ <h2>1 · How to Write a Full-Marks Answer</h2>
+ <p>In a written exam, the teacher gives marks for <b>steps</b>, not only the final answer. A correct answer with no working may lose half the marks.</p>
+ <h3>A. For numerical problems (3–4 marks)</h3>
+ <div class="steps">
+  <div class="step"><b>1 · Given</b>Write all values with units. Draw a small diagram if the path has turns.</div>
+  <div class="step"><b>2 · Formula</b>Write the formula in symbols first.</div>
+  <div class="step"><b>3 · Substitute</b>Put the numbers in, with units.</div>
+  <div class="step"><b>4 · Answer</b>Final value + <b>unit</b> + <b>direction</b> (for displacement / velocity).</div>
+ </div>
+ <h3>B. For theory questions</h3>
+ <table>
+  <tr><th>Question word</th><th>What to write</th><th>Marks tip</th></tr>
+  <tr><td>Define</td><td>1 exact sentence using the keyword (e.g. “scalar”, “rate of change of displacement”).</td><td>Keyword = mark</td></tr>
+  <tr><td>Differentiate</td><td>A table with at least 3 points, side by side.</td><td>1 mark per point</td></tr>
+  <tr><td>Give reason / Why?</td><td>Statement + “because” + example.</td><td>Reason + example</td></tr>
+  <tr><td>Explain</td><td>Definition → example → conclusion.</td><td>Use real-life example</td></tr>
+ </table>
+ <div class="tip"><b>Mark-losing mistakes:</b> forgetting units · forgetting direction in displacement/velocity · writing “speed” when the question asks “velocity” · writing the formula in words only · not showing the diagram when the path turns.</div>
+</section>
+
+<section id="learn">
+ <h2>2 · Learn These (Key Definitions)</h2>
+ <table>
+  <tr><th>Term</th><th>Exam-ready definition</th></tr>
+  <tr><td>Rest</td><td>An object is at rest if its <b>position does not change</b> with respect to its surroundings.</td></tr>
+  <tr><td>Motion</td><td>An object is in motion if its <b>position changes with time</b> with respect to its surroundings.</td></tr>
+  <tr><td>Rest &amp; motion are relative</td><td>An object can be at rest for one observer and in motion for another. <i>Eg:</i> a passenger is at rest with respect to the bus but in motion with respect to a person on the road.</td></tr>
+  <tr><td>Distance</td><td>The <b>total path length</b> travelled by an object. Scalar. Never negative. SI unit: metre (m).</td></tr>
+  <tr><td>Displacement</td><td>The <b>shortest straight-line distance</b> from the initial to the final position, in a given direction. Vector. Displacement = final position − initial position. SI unit: metre (m).</td></tr>
+  <tr><td>Speed</td><td>Distance travelled per unit time. Scalar. Speed = distance ÷ time. SI unit: m/s.</td></tr>
+  <tr><td>Velocity</td><td>Displacement per unit time (rate of change of displacement). Vector. Velocity = displacement ÷ time. SI unit: m/s.</td></tr>
+  <tr><td>Uniform motion</td><td>Equal distances covered in equal intervals of time. <i>Eg:</i> minute hand of a clock.</td></tr>
+  <tr><td>Non-uniform motion</td><td>Unequal distances covered in equal intervals of time. <i>Eg:</i> a bus in traffic.</td></tr>
+  <tr><td>Uniform velocity</td><td>Equal <b>displacements</b> in equal times <b>in the same direction</b>.</td></tr>
+  <tr><td>Instantaneous speed</td><td>Speed of a body at a particular instant. <i>Eg:</i> speedometer reading.</td></tr>
+ </table>
+ <h3>Types of motion</h3>
+ <table>
+  <tr><th>Type</th><th>Meaning</th><th>Examples</th></tr>
+  <tr><td>Translatory</td><td>All parts move the same distance in the same direction (no rotation).</td><td>Car on straight road, book sliding on table</td></tr>
+  <tr><td>Curvilinear</td><td>Translatory motion along a curved path.</td><td>Car taking a turn, thrown ball</td></tr>
+  <tr><td>Rotatory</td><td>Every part moves in a circle around a fixed axis.</td><td>Ceiling fan, spinning top, Earth on its axis</td></tr>
+  <tr><td>Oscillatory</td><td>“To and fro” motion about a fixed point, along the same path.</td><td>Pendulum, swing, sitar string</td></tr>
+ </table>
+ <h3>Formulas &amp; conversions</h3>
+ <div class="formula">Speed = Distance ÷ Time &nbsp;|&nbsp; Velocity = Displacement ÷ Time</div>
+ <div class="formula">1 km/h = 5/18 m/s &nbsp;&nbsp;|&nbsp;&nbsp; 1 m/s = 18/5 km/h</div>
+ <div class="tip"><b>Shortcut:</b> km/h → m/s : multiply by <b>5/18</b>. m/s → km/h : multiply by <b>18/5</b>.</div>
+ <div class="ok"><b>Remember:</b> Displacement ≤ Distance, always. So distance ÷ displacement is always <b>≥ 1</b>. They are equal only for straight-line motion in one direction.</div>
+</section>
+
+<section id="compare">
+ <h2>3 · “Differentiate” Tables (Very Common Question)</h2>
+ <div class="cols">
+ <table>
+  <tr><th>Distance</th><th>Displacement</th></tr>
+  <tr><td>Total path travelled</td><td>Shortest straight-line path</td></tr>
+  <tr><td>Scalar</td><td>Vector</td></tr>
+  <tr><td>No direction</td><td>Has direction</td></tr>
+  <tr><td>Always positive</td><td>Can be +, − or zero</td></tr>
+  <tr><td>Depends on path</td><td>Depends only on start &amp; end</td></tr>
+ </table>
+ <table>
+  <tr><th>Speed</th><th>Velocity</th></tr>
+  <tr><td>Scalar</td><td>Vector</td></tr>
+  <tr><td>Uses distance</td><td>Uses displacement</td></tr>
+  <tr><td>No direction</td><td>Has direction</td></tr>
+  <tr><td>Always positive</td><td>Can be + or −</td></tr>
+  <tr><td>40 km/h</td><td>40 km/h towards North</td></tr>
+ </table>
+ </div>
+ <div class="tip"><b>Direction tip:</b> if the direction is not exactly in the middle, write “East of North” or “North of East”, not just “NE”. A person walking 4 m east then 3 m north has a displacement of 5 m <i>north of east</i>.</div>
+</section>
+
+<section id="model">
+ <h2>4 · Model Answers (Study How Marks Are Earned)</h2>
+
+ <details open><summary>Model 1 — Distance &amp; displacement with a turn (4 marks)</summary><div class="body">
+  <p><b>Q.</b> A person walks 4 m east, then 3 m north. Find the distance and displacement.</p>
+  <p><b>Given:</b> 4 m east, then 3 m north (right-angled path).<br>
+  <b>Distance</b> = 4 m + 3 m = <b>7 m</b> <i>(1 mark)</i><br>
+  <b>Displacement</b> = straight line from start to end = √(4² + 3²) <i>(1 mark: method)</i><br>
+  = √(16 + 9) = √25 = <b>5 m</b> <i>(1 mark)</i> towards north-east (north of east) <i>(1 mark: unit + direction)</i></p>
+ </div></details>
+
+ <details><summary>Model 2 — Closed loop (3 marks)</summary><div class="body">
+  <p><b>Q.</b> A student runs once around a circular park and returns to the start. Path covered = 200 m. Find distance and displacement.</p>
+  <p>Distance = <b>200 m</b> (whole path counted). <i>(1)</i><br>
+  Displacement = final position − initial position = <b>0 m</b>. <i>(1)</i><br>
+  <b>Reason:</b> starting point and ending point are the same. <i>(1)</i></p>
+ </div></details>
+
+ <details><summary>Model 3 — Speed and velocity (4 marks)</summary><div class="body">
+  <p><b>Q.</b> A car travels from A to B in 2 hours. The distance AB is 120 km. Find the speed and velocity.</p>
+  <p><b>Given:</b> d = 120 km, t = 2 h<br>
+  <b>Formula:</b> speed v = d / t <i>(1)</i><br>
+  v = 120 km ÷ 2 h = <b>60 km/h</b> <i>(1)</i><br>
+  <b>Velocity</b> = displacement / time. For straight-line motion, displacement = 120 km, so velocity = 120 ÷ 2 = <b>60 km/h from A towards B</b> <i>(2: formula, direction)</i></p>
+ </div></details>
+
+ <details><summary>Model 4 — Theory “Differentiate” answer (3 marks)</summary><div class="body">
+  <p><b>Q.</b> Differentiate between speed and velocity.</p>
+  <p>Draw the table from Section 3 and write any <b>three</b> points: scalar vs vector, distance vs displacement, no direction vs has direction. Add the example “40 km/h” and “40 km/h towards North” to earn the last mark.</p>
+ </div></details>
+</section>
+
+<section id="practice">
+ <h2>5 · Practice Worksheet</h2>
+ <p class="noprint">Answer on the lines, then open the Answer Key (Section 6) to check. Aim to write full working, the way it is done in the Model Answers.</p>
+
+ <h3>Part A — Very Short Answers <span class="marks">1 mark each</span></h3>
+ <ol>
+  <li>Distance is a <span class="fill"></span> quantity, while displacement is a <span class="fill"></span> quantity.</li>
+  <li>The SI unit of speed is <span class="fill"></span>.</li>
+  <li>True or false: Displacement can be zero even when distance is not zero. <span class="fill"></span></li>
+  <li>Convert 72 km/h into m/s. <span class="fill"></span></li>
+  <li>Convert 15 m/s into km/h. <span class="fill"></span></li>
+  <li>Name the type of motion of a ceiling fan blade. <span class="fill"></span></li>
+  <li>What does the speedometer of a car show: average speed or instantaneous speed? <span class="fill"></span></li>
+  <li>Can distance ever be less than displacement? <span class="fill"></span></li>
+ </ol>
+
+ <h3>Part B — Short Answers <span class="marks">2–3 marks each</span></h3>
+ <p class="q">B1. Define <i>motion</i> and give two examples. <small>(2)</small></p><textarea></textarea>
+ <p class="q">B2. Differentiate between distance and displacement (any three points). <small>(3)</small></p><textarea class="big"></textarea>
+ <p class="q">B3. “Rest and motion are relative.” Explain with an example. <small>(3)</small></p><textarea class="big"></textarea>
+ <p class="q">B4. A car moves at 40 km/h. Another car moves at 40 km/h towards North. Which one tells the speed and which one tells the velocity? Why? <small>(3)</small></p><textarea></textarea>
+ <p class="q">B5. Define uniform motion and non-uniform motion. Give one example of each. <small>(3)</small></p><textarea class="big"></textarea>
+ <p class="q">B6. Name the three main types of motion and give one example of each. <small>(3)</small></p><textarea></textarea>
+
+ <h3>Part C — Numerical Problems <span class="marks">3–4 marks each</span></h3>
+ <p class="noprint"><i>Use the 4 steps: Given → Formula → Substitution → Answer with unit and direction.</i></p>
+ <p class="q">C1. A person walks 6 m east and then 8 m north. Find the distance and the displacement. <small>(4)</small></p><textarea class="big"></textarea>
+ <p class="q">C2. A girl walks 12 m forward and then 5 m backward. Find the distance and the displacement. <small>(3)</small></p><textarea></textarea>
+ <p class="q">C3. A car travels 150 km in 3 hours in a straight line towards east. Find its speed and velocity. <small>(4)</small></p><textarea class="big"></textarea>
+ <p class="q">C4. An athlete runs once around a 400 m circular track in 50 s and stops at the starting point. Find (i) the speed, (ii) the displacement, (iii) the average velocity. <small>(4)</small></p><textarea class="big"></textarea>
+ <p class="q">C5. A bus moves with a constant speed of 72 km/h. Find the distance covered in 30 s. <small>(4) <i>Hint: convert units first.</i></small></p><textarea class="big"></textarea>
+ <p class="q">C6. A train moves at 20 m/s for 15 s, then at 10 m/s for the next 10 s. Find the total distance and the average speed. <small>(4)</small></p><textarea class="big"></textarea>
+ <p class="q">C7. A boat moves 15 km east and then 20 km north. Find the distance and the magnitude of displacement. <small>(4)</small></p><textarea class="big"></textarea>
+ <p class="q">C8. You walk 10 m North and then 10 m South. Which quantity describes your actual movement better: distance or displacement? Find both and give a reason. <small>(3)</small></p><textarea></textarea>
+
+ <h3>Part D — Table Questions <span class="marks">3 marks</span></h3>
+ <p class="q">D1. Two cars were observed for 40 s. <small>(3)</small></p>
+ <div class="cols">
+  <table><tr><th colspan="2">Car A</th></tr><tr><th>Time (s)</th><th>Distance (m)</th></tr>
+   <tr><td>0</td><td>0</td></tr><tr><td>10</td><td>150</td></tr><tr><td>20</td><td>300</td></tr><tr><td>30</td><td>450</td></tr><tr><td>40</td><td>600</td></tr></table>
+  <table><tr><th colspan="2">Car B</th></tr><tr><th>Time (s)</th><th>Distance (m)</th></tr>
+   <tr><td>0</td><td>0</td></tr><tr><td>10</td><td>50</td></tr><tr><td>20</td><td>90</td></tr><tr><td>30</td><td>180</td></tr><tr><td>40</td><td>230</td></tr></table>
+ </div>
+ <p>(a) Find the distance each car covers in every 10 s interval. (b) Which car is in uniform motion? Give a reason. (c) Find Car A's speed.</p>
+ <textarea class="big"></textarea>
+
+ <p class="q">D2. Write <b>U</b> (uniform) or <b>NU</b> (non-uniform). <small>(3)</small></p>
+ <table>
+  <tr><td>Minute hand of a clock <span class="fill"></span></td><td>A boy cycling in a crowded place <span class="fill"></span></td></tr>
+  <tr><td>A train entering a station <span class="fill"></span></td><td>Fan running at fixed speed <span class="fill"></span></td></tr>
+  <tr><td>A kite in the air <span class="fill"></span></td><td>Rotation of the Earth <span class="fill"></span></td></tr>
+ </table>
+
+ <p class="q">D3. Name the type of motion: translatory (T), curvilinear (C), rotatory (R) or oscillatory (O). <small>(3)</small></p>
+ <table>
+  <tr><td>Swing <span class="fill"></span></td><td>Spinning top <span class="fill"></span></td></tr>
+  <tr><td>Car on a straight road <span class="fill"></span></td><td>Ball thrown in the air <span class="fill"></span></td></tr>
+  <tr><td>Potter's wheel <span class="fill"></span></td><td>Vibrating sitar string <span class="fill"></span></td></tr>
+ </table>
+
+ <h3>Part E — Think &amp; Reason (HOTS) <span class="marks">3 marks each</span></h3>
+ <p class="q">E1. You jog around a circular park of circumference 150 m and return to the start. Find the distance and the displacement. Are they equal? Why? <small>(3)</small></p><textarea></textarea>
+ <p class="q">E2. A car moves 10 m East and then 10 m North with the same speed throughout. Is its velocity uniform? Explain. <small>(3)</small></p><textarea></textarea>
+ <p class="q">E3. A passenger sits in a moving train. Is he at rest or in motion? Explain, giving both observers. <small>(3)</small></p><textarea></textarea>
+ <p class="q">E4. Can displacement be zero when distance is not zero? Can distance be zero when displacement is not zero? Explain. <small>(3)</small></p><textarea></textarea>
+</section>
+
+<section id="key">
+ <h2>6 · Answer Key &amp; Marking Points</h2>
+ <p class="noprint">Try everything first. Then compare your working step by step. Marks are given for each step.</p>
+
+ <details><summary>Part A answers</summary><div class="body">
+  <ol>
+   <li>scalar; vector</li><li>metre per second (m/s)</li><li>True</li>
+   <li>72 × 5/18 = <b>20 m/s</b></li><li>15 × 18/5 = <b>54 km/h</b></li>
+   <li>Rotatory motion</li><li>Instantaneous speed</li><li>No. Displacement is never greater than distance, so distance is never less than displacement.</li>
+  </ol>
+ </div></details>
+
+ <details><summary>Part B answers</summary><div class="body">
+  <div class="ans"><b>B1.</b> Motion is the change in position of an object with respect to its surroundings in a given time. Examples: a car moving on a road; a bird flying in the sky.</div>
+  <div class="ans"><b>B2.</b> Distance: total path length; scalar; no direction; always positive; depends on path. Displacement: shortest straight-line path from start to end; vector; has direction; can be +, − or zero; depends only on start and end positions.</div>
+  <div class="ans"><b>B3.</b> An object may be in motion for one observer and at rest for another. Example: a person in a moving bus sees the friend beside them at rest, but a person standing on the road sees both in motion. So rest and motion depend on the observer.</div>
+  <div class="ans"><b>B4.</b> “40 km/h” gives only the magnitude, so it is <b>speed</b> (scalar). “40 km/h towards North” gives magnitude and direction, so it is <b>velocity</b> (vector).</div>
+  <div class="ans"><b>B5.</b> Uniform motion: equal distances in equal intervals of time (minute hand of a clock). Non-uniform motion: unequal distances in equal intervals of time (a bus moving in traffic).</div>
+  <div class="ans"><b>B6.</b> Translatory (car on a straight road); rotatory (ceiling fan); oscillatory (pendulum / swing). Curvilinear (car taking a turn) is a special type of translatory motion.</div>
+ </div></details>
+
+ <details><summary>Part C answers</summary><div class="body">
+  <div class="ans"><b>C1.</b> Distance = 6 + 8 = <b>14 m</b>. Displacement = √(6² + 8²) = √(36 + 64) = √100 = <b>10 m</b>, towards north of east.</div>
+  <div class="ans"><b>C2.</b> Distance = 12 + 5 = <b>17 m</b>. Displacement = 12 − 5 = <b>7 m forward</b>.</div>
+  <div class="ans"><b>C3.</b> Speed = d/t = 150 ÷ 3 = <b>50 km/h</b>. Straight line, so displacement = 150 km east. Velocity = 150 ÷ 3 = <b>50 km/h towards east</b>.</div>
+  <div class="ans"><b>C4.</b> (i) Speed = 400 ÷ 50 = <b>8 m/s</b>. (ii) Displacement = <b>0 m</b> (start = end). (iii) Average velocity = 0 ÷ 50 = <b>0 m/s</b>.</div>
+  <div class="ans"><b>C5.</b> v = 72 km/h = 72 × 5/18 = 20 m/s. Distance = v × t = 20 × 30 = <b>600 m</b>.</div>
+  <div class="ans"><b>C6.</b> Distance 1 = 20 × 15 = 300 m. Distance 2 = 10 × 10 = 100 m. Total distance = <b>400 m</b>. Total time = 25 s. Average speed = 400 ÷ 25 = <b>16 m/s</b>.</div>
+  <div class="ans"><b>C7.</b> Distance = 15 + 20 = <b>35 km</b>. Displacement = √(15² + 20²) = √(225 + 400) = √625 = <b>25 km</b> (north of east).</div>
+  <div class="ans"><b>C8.</b> Distance = 20 m; displacement = 0 m. Distance describes the actual movement better, because you really walked 20 m, while displacement only compares the start and end points, which are the same.</div>
+ </div></details>
+
+ <details><summary>Part D answers</summary><div class="body">
+  <div class="ans"><b>D1.</b> (a) Car A: 150 m, 150 m, 150 m, 150 m. Car B: 50 m, 40 m, 90 m, 50 m. (b) Car A is in uniform motion because it covers equal distances (150 m) in equal intervals of time (10 s); Car B covers unequal distances, so it is non-uniform. (c) Speed of A = 150 ÷ 10 = <b>15 m/s</b>.</div>
+  <div class="ans"><b>D2.</b> U, NU, NU, U, NU, U (in order of the table, row by row).</div>
+  <div class="ans"><b>D3.</b> O, R, T, C, R, O (in order of the table, row by row).</div>
+ </div></details>
+
+ <details><summary>Part E answers</summary><div class="body">
+  <div class="ans"><b>E1.</b> Distance = 150 m. Displacement = 0 m. They are not equal, because the starting and ending points are the same, so there is no change in position, although the whole path is counted in distance.</div>
+  <div class="ans"><b>E2.</b> No. Even though the speed is the same, the direction changes (East to North), and velocity includes direction. So velocity is non-uniform.</div>
+  <div class="ans"><b>E3.</b> With respect to the compartment/other passengers he is at rest, because his position does not change. With respect to a person standing on the platform or the trees outside, he is in motion. So rest depends on the observer.</div>
+  <div class="ans"><b>E4.</b> Yes, displacement can be zero with non-zero distance (a closed loop like a round trip). No, distance cannot be zero if displacement is non-zero, because to change position, some path must be travelled.</div>
+ </div></details>
+</section>
+
+<section id="check">
+ <h2>7 · Before You Hand In: Self-Check</h2>
+ <ul class="tick">
+  <li>Did I write Given, Formula, Substitution and Answer in every numerical?</li>
+  <li>Did I write the unit (m, km, m/s, km/h) with every answer?</li>
+  <li>Did I write the direction for displacement and velocity?</li>
+  <li>Did I convert km/h to m/s (×5/18) when the time was in seconds?</li>
+  <li>Did I write at least 3 points in “differentiate” answers?</li>
+  <li>Did I give an example for every definition?</li>
+  <li>Did I draw a small diagram when the path had a turn?</li>
+  <li>Did I underline the final answer?</li>
+ </ul>
+ <div class="tools noprint">
+  <button onclick="window.print()">Print worksheet</button>
+  <button class="alt" onclick="document.querySelectorAll('textarea').forEach(t=>t.value='')">Clear all answers</button>
+ </div>
+</section>
+
+<footer>Class 7 Physics · Motion in a Straight Line · Practice worksheet</footer>
+</div>
+</body>
+</html>
